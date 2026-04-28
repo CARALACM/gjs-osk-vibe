@@ -394,7 +394,7 @@ export default class GjsOskExtension extends Extension {
             this._indicator.connect("touch-event", (_actor, event) => {
                 if (event.type() == Clutter.EventType.TOUCH_END) this._toggleKeyboard()
             });
-            Main.panel.addToStatusArea("GJS OSK Indicator", this._indicator);
+            Main.panel.addToStatusArea("GJS OSK Indicator", this._indicator, 1, 'left');
         }
 
         // this._toggle = new KeyboardMenuToggle(this);
@@ -445,7 +445,7 @@ export default class GjsOskExtension extends Extension {
                 this._indicator.connect("touch-event", (_actor, event) => {
                     if (event.type() == Clutter.EventType.TOUCH_END) this._toggleKeyboard()
                 });
-                Main.panel.addToStatusArea("GJS OSK Indicator", this._indicator);
+                Main.panel.addToStatusArea("GJS OSK Indicator", this._indicator, 1, 'left');
             } else {
                 if (this._indicator != null) {
                     this._indicator.destroy();
