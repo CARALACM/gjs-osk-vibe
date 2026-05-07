@@ -1,4 +1,4 @@
-# GJS-OSK Vibe
+# GJS-OSK - Vibe
 
 This is a personal fork of the [GJS-OSK](https://github.com/Vishram1123/gjs-osk) project.
 
